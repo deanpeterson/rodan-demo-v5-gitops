@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: rodan-demo-v5-gitops
+  description: This is GitOps manifest for rodan-demo-v5   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: tssc/gitops=rodan-demo-v5
+    backstage.io/kubernetes-id: rodan-demo-v5 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: rodan-demo-v5
+spec:
+  type: gitops
+  owner: user:default/guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:rodan-demo-v5

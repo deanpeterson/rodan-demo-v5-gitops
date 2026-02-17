@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: rodan-demo-v5-gitops-repository
+spec:
+  url: https://github.com/deanpeterson/rodan-demo-v5-gitops
