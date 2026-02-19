@@ -12,5 +12,5 @@ spec:
   template:
     spec:
       containers:
-        - image: quay-quay-quay-test.apps.salamander.aimlworkbench.com/deanpeterson/rodan-demo-v5:87e64a777d1370a05265da5996af6dc2acdda70f@sha256:baece015b6310cb58cb6d8d05ea866a6c0931680023d95ff3eef3c58c32bb99e
+        - image: quay-quay-quay-test.apps.salamander.aimlworkbench.com/deanpeterson/rodan-demo-v5:3fcab5709b63c8636ad54fd8becdedfd82d98a79@sha256:d57300e505f09a0971c8e9266d758d6f56f462419c635cb95b9935fee3bdc7eb
           name: container-image
